@@ -35,6 +35,14 @@ import android.widget.TextView;
 
             int id = view.getId();
 
+            if(id==R.id.btClick){
+                String inputStr = input.getText().toString();
+                output.setText(inputStr);
+            }else if(id ==R.id.btClear){
+                input.setText("");
+                output.setText("");
+            }
+
            /* switch (id) {
                 case R.id.btClick:
                     String inputStr = input.getText().toString();
